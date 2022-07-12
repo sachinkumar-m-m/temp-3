@@ -1,0 +1,70 @@
+ /* Mobile */
+
+ @media(max-width:768px){
+    .banner{
+        display: none;
+    }
+    .mobileBanner{
+        display: block;
+    }
+    .mobileBanner>header{
+        background: linear-gradient(to right, #48b1bf, #06beb6);
+        padding: 20px;
+        text-align:center;
+    }
+    
+    .mobileBanner>header>nav>ul{
+        list-style: none;
+    }
+    .mobileBanner>header>nav>ul>li{
+        padding:20px;
+    }
+    .mobileBanner>header>nav>ul>li>a{
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .mobileBanner>header>nav>ul>li:hover a::after{
+        color:gray;
+        width: 100%;
+    }
+    .mobileBanner>header>nav>img{
+        height: 56px;
+    }
+    .mobileBanner>section{
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url(../images/img2.jpg) no-repeat top;
+        height:500px;
+        background-size: 100%;
+        padding: 20px;
+    }
+    .mobileBanner>section>h1{
+        text-align: center;margin: 50px;font-size: 40px;color: #fff;text-shadow: 5px 5px 4px #06beb6;
+        text-transform:uppercase;
+    }
+    .container{
+        margin: auto 20px;
+    }
+    [class*='col']{
+        width: 100%;
+    }
+ }
+
+ /* Tab */
+ @media (min-width:768px) and (max-width:1200px) {
+    .mobileBanner{
+        display: none;
+    }
+    .banner{
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url(../images/img1.jpg) no-repeat top;
+        height:450px; 
+        background-size: 100%;
+    }
+    .banner>header>nav{
+        text-align: center;
+
+    }
+    .banner>header>nav>ul{
+        float: none;
+    }
+    
+ }
